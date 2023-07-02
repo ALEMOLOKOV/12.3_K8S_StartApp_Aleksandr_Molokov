@@ -21,7 +21,7 @@
 
 ## Ответ
 
-Ссылка на Deployment - 
+Ссылка на Deployment - ![Deployment](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/49ce87a166f74a44d69e66c81aa838254ab21501/Deployment.yaml)
 Ссылка на Service
 
 Статус Deployment
