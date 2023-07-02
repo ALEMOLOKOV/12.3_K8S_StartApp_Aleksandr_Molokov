@@ -1,0 +1,77 @@
+amolokov@microk8s:~/k8s_base/12.3$ kubectl describe pods first-deployment-57bc5ff969-p4b87
+Name:             first-deployment-57bc5ff969-p4b87
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             microk8s/10.129.0.18
+Start Time:       Sun, 02 Jul 2023 20:07:00 +0000
+Labels:           app=first-deployment
+                  pod-template-hash=57bc5ff969
+Annotations:      cni.projectcalico.org/containerID: 30c53dfd48e8cbda3dd0746f43ca5f301518b9c89705b1b545c3b18f23052d67
+                  cni.projectcalico.org/podIP: 10.1.128.225/32
+                  cni.projectcalico.org/podIPs: 10.1.128.225/32
+Status:           Running
+IP:               10.1.128.225
+IPs:
+  IP:           10.1.128.225
+Controlled By:  ReplicaSet/first-deployment-57bc5ff969
+Containers:
+  nginx:
+    Container ID:   containerd://1dabce721b9f1737fd5432f89358cb8a047564a3ce001068af9b14a1a471a82c
+    Image:          nginx:1.19
+    Image ID:       docker.io/library/nginx@sha256:df13abe416e37eb3db4722840dd479b00ba193ac6606e7902331dcea50f4f1f2
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Sun, 02 Jul 2023 20:10:12 +0000
+      Finished:     Sun, 02 Jul 2023 20:10:14 +0000
+    Ready:          False
+    Restart Count:  5
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2kb26 (ro)
+  multitool:
+    Container ID:   containerd://1509b05b6b61e5709577917c859015278d14179d5f1a791e7798d08bac87797f
+    Image:          wbitt/network-multitool
+    Image ID:       docker.io/wbitt/network-multitool@sha256:82a5ea955024390d6b438ce22ccc75c98b481bf00e57c13e9a9cc1458eb92652
+    Port:           8081/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sun, 02 Jul 2023 20:07:01 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2kb26 (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  kube-api-access-2kb26:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  4m53s                  default-scheduler  Successfully assigned default/first-deployment-57bc5ff969-p4b87 to microk8s
+  Normal   Pulled     4m53s                  kubelet            Container image "wbitt/network-multitool" already present on machine
+  Normal   Created    4m53s                  kubelet            Created container multitool
+  Normal   Started    4m53s                  kubelet            Started container multitool
+  Normal   Pulled     3m14s (x5 over 4m53s)  kubelet            Container image "nginx:1.19" already present on machine
+  Normal   Created    3m14s (x5 over 4m53s)  kubelet            Created container nginx
+  Normal   Started    3m14s (x5 over 4m53s)  kubelet            Started container nginx
+  Warning  BackOff    3m11s (x7 over 4m45s)  kubelet            Back-off restarting failed container nginx in pod first-deployment-57bc5ff969-p4b87_default(64b7d04a-4fb5-4914-ad8e-47269e17606d)
