@@ -20,3 +20,21 @@
 4. Продемонстрировать состояние пода до и после запуска сервиса.
 
 ## Ответ
+
+Ссылка на Deployment - 
+Ссылка на Service
+
+Статус Deployment
+![2 1Статус Deployment](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/905b8856-c057-4533-be9f-7b9fd15ee283)
+
+Статус Pods
+![2 2Статус Pods](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/85829aea-6b3f-49df-bee4-a8aa5c0928da)
+
+Запуск и проверка Service
+![2 3 Запуск и проверка Service](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/68ddc692-bbf8-4325-b6b4-b077aae05c06)
+
+Статус Pods после старта Service
+![2 4 Статус подов и проверка nginx после старта сервиса](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/6c0349fb-e867-4d65-8f40-1db1618f70b8)
+
+
+
