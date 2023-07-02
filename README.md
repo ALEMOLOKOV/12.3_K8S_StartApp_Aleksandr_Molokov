@@ -14,7 +14,7 @@
 
 Мой файл Deployment - ![Deployment](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/a2accec78054836ba1ce7094a0d55c6629c9b476/1%20task%20dep.yaml)
 
-Ошибка - ![Ошибка]()
+Ошибка - ![Ошибка](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/4c90c3cdc2cf45b6a719e7503b755ac12278aed9/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0.txt)
 
 ------
 
