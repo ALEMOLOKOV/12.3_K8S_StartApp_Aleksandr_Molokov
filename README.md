@@ -11,7 +11,8 @@
 ## Ответ
 
 Никак не получается выполнить задание, пересмотрел много примеров и различных источников, но толком ничего не смог понять
-Мой файл Deployment - ![Deployment]()
+
+Мой файл Deployment - ![Deployment](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/a2accec78054836ba1ce7094a0d55c6629c9b476/1%20task%20dep.yaml)
 
 Ошибка - ![Ошибка]()
 
