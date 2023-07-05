@@ -10,11 +10,34 @@
 
 ## Ответ
 
-Никак не получается выполнить задание, пересмотрел много примеров и различных источников, но толком ничего не смог понять, один из контейнеров постоянно падает с ошибкой. Подскажите пожалуйста где можно почитать про это подробно.
+Мой файл Deployment - ![)
 
-Мой файл Deployment - ![Deployment](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/a2accec78054836ba1ce7094a0d55c6629c9b476/1%20task%20dep.yaml)
+### Увеличение реплик до 2-х
 
-Ошибка - ![Ошибка](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/4c90c3cdc2cf45b6a719e7503b755ac12278aed9/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0.txt)
+Для увличения реплик необходимо указать в параметре replicas необходимое количество
+
+### Поды до и после маштабирования
+
+#### 1 реплика
+
+![1 1 1 replica](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/a9247007-66ab-470b-86bd-a83d7d609f39)
+
+#### 2 реплики
+
+![1 1 2 replicas](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/40c05d70-24d5-4f85-9327-50b8645c8488)
+
+### Поды
+
+![1 1 5 создание пода мультитул](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/d7d2a831-cb48-45b1-942d-92bab2645a95)
+
+#### Сервис
+
+![1 1 4 service](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/c28d2859-178a-486a-8fc6-e4aa43c3a998)
+
+#### Доступ 
+
+![ответ 1,1,5](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/4b1f4978-f762-4f0f-ae0e-ffbdf4b8a84b)
+
 
 ------
 
