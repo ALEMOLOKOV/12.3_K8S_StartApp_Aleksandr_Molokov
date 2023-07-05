@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-deployment
+  labels:
+    app: first-deployment
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: first-deployment
+  template:
+    metadata:
+      labels:
+        app: first-deployment
+    spec:
+      containers:
+      - image: nginx:1.19.2
+        name: nginx
+        imagePullPolicy: IfNotPresent
+      - image: wbitt/network-multitool
+        name: multitool
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: HTTP_PORT
+            value: '8080'
+          - name: HTTPS_PORT
+            value: '8081'
