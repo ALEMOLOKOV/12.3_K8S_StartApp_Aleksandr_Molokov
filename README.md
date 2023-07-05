@@ -27,7 +27,7 @@ Service - ![Service](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_M
 
 ![1 1 2 replicas](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/40c05d70-24d5-4f85-9327-50b8645c8488)
 
-### Поды
+### Добавление пода
 Pod - ![Pod](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/blob/93489d5c7b7cc5cfd5167d58dbf8ad0c31904804/pod%20multitool.yaml)
 
 ![1 1 5 создание пода мультитул](https://github.com/ALEMOLOKOV/12.3_K8S_StartApp_Aleksandr_Molokov/assets/109212419/d7d2a831-cb48-45b1-942d-92bab2645a95)
